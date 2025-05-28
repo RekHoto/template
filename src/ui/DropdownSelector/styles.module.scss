@@ -1,0 +1,86 @@
+.dropdownContainer {
+  position: relative;
+  font-size: 0.875rem;
+  color: var(--color-text);
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  padding-left: 4px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.dropdownControl {
+  background: var(--color-surface-light);
+  border-radius: 4px;
+  padding: 6px 32px 6px 12px;
+  border: 1px solid transparent;
+  min-height: 36px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+
+  &:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 179, 167, 0.2);
+  }
+}
+
+.selectedValue {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.caret {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 6px solid var(--color-text-secondary);
+  transform: translateY(-50%);
+}
+
+.optionsList {
+  position: absolute;
+  max-height: 150px;
+  left: 0;
+  right: 0;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  z-index: 10;
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.optionItem {
+  padding: 0.5rem 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.optionItem:hover {
+  background-color: var(--color-primary-light);
+  color: #fff;
+}
+
+.errorText {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  color: var(--color-red);
+}
+
+.top    { bottom: calc(100% + 4px); left: 0; }
+.bottom { top:    calc(100% + 4px); left: 0; }

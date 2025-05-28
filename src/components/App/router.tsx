@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import { App } from "@/components/App/App";
 import { MainPage } from "@/pages/main/MainPage";
+import { PlaygroundPage } from "@/pages/playground/PlaygroundPage";
 
 const routes = [
   {
@@ -12,6 +13,10 @@ const routes = [
         element: <MainPage />,
       },
     ],
+  },
+  {
+    path: "/playground",
+    element: <PlaygroundPage />,
   },
 ];
 

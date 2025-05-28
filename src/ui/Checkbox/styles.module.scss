@@ -1,0 +1,71 @@
+/* Checkbox.module.scss */
+
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  user-select: none;
+  width: 100%;
+}
+
+.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+
+  .box {
+    background: var(--color-muted);
+    border-color: var(--color-border);
+  }
+
+  .label {
+    color: var(--color-text-disabled);
+  }
+}
+
+.input {
+  /* keep it accessible but hidden */
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.box {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--color-border);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-light);
+  transition:
+    background 0.15s var(--shadow),
+    border-color 0.15s ease;
+}
+
+.input:focus-visible + .box {
+  outline: 2px solid var(--color-info);
+  outline-offset: 2px;
+}
+
+/* fill background & change border when checked */
+.input:checked + .box {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+
+/* keep the tick or dash white against the filled bg */
+.box svg {
+  width: 14px;
+  height: 14px;
+  stroke: var(--color-surface);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* label text color */
+.label {
+  font-size: 14px;
+  color: var(--color-text);
+}

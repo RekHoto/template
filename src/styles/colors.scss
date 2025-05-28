@@ -1,7 +1,43 @@
 :root {
-  --color-primary: #0052FF;
-  --color-secondary: #0052FF;
-  --color-red: #f5353d;
-  --color-green: #62c751;
-  --shadow: 0 20px 40px -10px rgba(29, 33, 94, 0.17);
+  /* Primary – vivid violet */
+  --color-primary:       #8456FF; /* Base  | WCAG AA text contrast on white ≈ 4.4 : 1 */
+  --color-primary-dark:  #5B3BCC; /* −20 % lightness for hover / active */
+  --color-primary-light: #A88BFF; /* +20 % lightness for subtle accents */
+
+  /* Semantic / status */
+  --color-red:     #E53935;
+  --color-red-dark:#B71C1C;
+  --color-green:   #43A047;
+  --color-info:    #039BE5; /* kept blue for informational messaging */
+  --color-warning: #FB8C00;
+
+  /* Typography */
+  --color-text:            #1E2024;
+  --color-text-secondary:  #4A4D53;
+  --color-text-disabled:   #9CA0A6;
+
+  /* Background & surfaces */
+  --color-background:      #F6F7F9;
+  --color-surface:         #FFFFFF;
+  --color-surface-light:   #FAFBFC;
+  --color-surface-x-light: #FDFDFD;
+
+  /* Borders & muted lines */
+  --color-border:          #D9DCE1;
+  --color-muted:           #8E9297;
+
+  /* Shadow colors */
+  --shadow-color-1: hsla(214, 20%, 14%, 0.10);
+  --shadow-color-2: hsla(214, 20%, 14%, 0.06);
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px -1px var(--shadow-color-1);
+  --shadow-sm: 0 2px 4px -2px var(--shadow-color-1),
+  0 1px 3px -1px var(--shadow-color-2);
+  --shadow-md: 0 4px 8px -2px var(--shadow-color-1),
+  0 2px 6px -2px var(--shadow-color-2);
+  --shadow-lg: 0 10px 20px -5px var(--shadow-color-1),
+  0 5px 15px -5px var(--shadow-color-2);
+  --shadow-xl: 0 20px 40px -10px var(--shadow-color-1),
+  0 8px 30px -8px var(--shadow-color-2);
 }

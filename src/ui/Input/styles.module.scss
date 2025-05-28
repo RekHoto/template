@@ -1,0 +1,111 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  font-weight: 600;
+  padding-left: 4px;
+  margin-bottom: 8px;
+}
+
+.label span {
+  color: var(--color-red);
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  padding-right: 3rem;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: var(--color-text);
+  background-color: rgba(250, 250, 250, 1);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--color-primary-light);
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.disabledInput {
+  background-color: var(--color-surface-light);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.errorInput, .errorInput:focus {
+  border-color: var(--color-red);
+  box-shadow: 0 0 0 2px rgba(251, 63, 28, 0.2);
+}
+
+.toggleButton {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: var(--color-primary);
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0.25rem;
+}
+
+.toggleButton:hover {
+  color: var(--color-primary-dark);
+}
+
+.hintText {
+  color: var(--color-text-secondary);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.errorText {
+  color: var(--color-red);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.status {
+  position: absolute;
+  right: 8px;
+  top: calc(50% - 7px);
+}
+
+.spinner {
+  width: 14px;
+  height: 14px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-top-color: var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.suggestions {
+  position: absolute;
+  top: calc(100% + 8px);
+  width: 100%;
+  z-index: 10;
+  max-height: 200px;
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
