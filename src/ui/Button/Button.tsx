@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import classNames from "classnames";
+import Typography from "@/ui/Typography/Typography";
 import cls from "./styles.module.scss";
 
 export type ButtonVariant =
@@ -59,7 +60,9 @@ const Button: React.FC<ButtonProps> = ({
           {variant === "iconOnly"
             ? icon
             : icon && <div className={cls.icon}>{icon}</div>}
-          {variant !== "iconOnly" && label && <div>{label}</div>}
+          {variant !== "iconOnly" && label && (
+            <Typography size="md">{label}</Typography>
+          )}
         </>
       )}
     </motion.button>

@@ -1,4 +1,3 @@
-// Checkbox.tsx
 import React, {
   ChangeEvent,
   forwardRef,
@@ -76,11 +75,7 @@ const Checkbox = forwardRef(
           </motion.svg>
         </span>
 
-        {label && (
-          <Typography variant="body1" className={cls.label}>
-            {label}
-          </Typography>
-        )}
+        {label && <Typography className={cls.label}>{label}</Typography>}
       </label>
     );
   }

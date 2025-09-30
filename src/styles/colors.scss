@@ -1,43 +1,84 @@
 :root {
-  /* Primary – vivid violet */
-  --color-primary:       #8456FF; /* Base  | WCAG AA text contrast on white ≈ 4.4 : 1 */
-  --color-primary-dark:  #5B3BCC; /* −20 % lightness for hover / active */
-  --color-primary-light: #A88BFF; /* +20 % lightness for subtle accents */
+  --border-dark: #262626;
+  --border-generic: #0000000f;
+  --border-light: #ffffff;
+  --border-light-85: #ffffffd9;
+  --border-background: #262626;
+  --border-danger: #c93636;
+  --border-primary: #fdc268;
+  --border-primary-active: #fdb84f;
+  --border-primary-hover: #fdcc81;
+  --surface-dark: #262626;
+  --surface-generic: #fffbf8;
+  --surface-generic-accent: #e9d7cf;
+  --surface-generic-hover: #f9f0eb;
+  --surface-light: #ffffff;
+  --surface-light-85: #ffffffd9;
+  --surface-primary: #fdc268;
+  --surface-background: #262626;
+  --surface-primary-active: #fdb84f;
+  --surface-primary-hover: #fdcc81;
+  --text-brown: #7e4837;
+  --text-danger: #c93636;
+  --text-dark-hint: #00000040;
+  --text-dark-primary: #000000d9;
+  --text-dark-secondary: #00000073;
+  --text-primary: #fdc268;
+  --text-primary-active: #fdb84f;
+  --text-primary-hover: #fdcc81;
+  --text-secondary: #284458;
+  --text-secondary-active: #0472a9;
+  --text-secondary-hover: #035279;
+  --text-text-primary-inverse: #ffffff;
+}
 
-  /* Semantic / status */
-  --color-red:     #E53935;
-  --color-red-dark:#B71C1C;
-  --color-green:   #43A047;
-  --color-info:    #039BE5; /* kept blue for informational messaging */
-  --color-warning: #FB8C00;
+:root[data-theme="dark"] {
+  --border-dark: #262626;
+  --border-generic: #ffffff0f;
+  --border-light: #ffffff;
+  --border-light-85: #ffffffd9;
+  --border-background: #262626;
+  --border-danger: #c93636;
+  --border-primary: #fdc268;
+  --border-primary-active: #fdb84f;
+  --border-primary-hover: #fdcc81;
+  --surface-dark: #262626;
+  --surface-generic: #035279;
+  --surface-generic-accent: #284458;
+  --surface-generic-hover: #222f3b;
+  --surface-light: #ffffff;
+  --surface-light-85: #ffffffd9;
+  --surface-primary: #fdc268;
+  --surface-background: #262626;
+  --surface-primary-active: #fdc268;
+  --surface-primary-hover: #fdc268;
+  --text-brown: #ffffff;
+  --text-danger: #c93636;
+  --text-dark-hint: #ffffff40;
+  --text-dark-primary: #ffffff;
+  --text-dark-secondary: #ffffff73;
+  --text-primary: #fdc968;
+  --text-primary-active: #fdb84f;
+  --text-primary-hover: #fdcc81;
+  --text-secondary: #284458;
+  --text-secondary-active: #0472a9;
+  --text-secondary-hover: #035279;
+  --text-text-primary-inverse: #000000d9;
+}
 
-  /* Typography */
-  --color-text:            #1E2024;
-  --color-text-secondary:  #4A4D53;
-  --color-text-disabled:   #9CA0A6;
-
-  /* Background & surfaces */
-  --color-background:      #F6F7F9;
-  --color-surface:         #FFFFFF;
-  --color-surface-light:   #FAFBFC;
-  --color-surface-x-light: #FDFDFD;
-
-  /* Borders & muted lines */
-  --color-border:          #D9DCE1;
-  --color-muted:           #8E9297;
-
-  /* Shadow colors */
-  --shadow-color-1: hsla(214, 20%, 14%, 0.10);
-  --shadow-color-2: hsla(214, 20%, 14%, 0.06);
-
-  /* Shadows */
-  --shadow-xs: 0 1px 2px -1px var(--shadow-color-1);
-  --shadow-sm: 0 2px 4px -2px var(--shadow-color-1),
-  0 1px 3px -1px var(--shadow-color-2);
-  --shadow-md: 0 4px 8px -2px var(--shadow-color-1),
-  0 2px 6px -2px var(--shadow-color-2);
-  --shadow-lg: 0 10px 20px -5px var(--shadow-color-1),
-  0 5px 15px -5px var(--shadow-color-2);
-  --shadow-xl: 0 20px 40px -10px var(--shadow-color-1),
-  0 8px 30px -8px var(--shadow-color-2);
+:root {
+  --font-sizes-2xs: 0.625rem;
+  --font-sizes-xs: 0.75rem;
+  --font-sizes-sm: 0.875rem;
+  --font-sizes-md: 1rem;
+  --font-sizes-lg: 1.125rem;
+  --font-sizes-xl: 1.25rem;
+  --font-sizes-2xl: 1.5rem;
+  --font-sizes-3xl: 1.875rem;
+  --font-sizes-4xl: 2.25rem;
+  --font-sizes-5xl: 3rem;
+  --font-sizes-6xl: 3.75rem;
+  --font-sizes-7xl: 4.5rem;
+  --font-sizes-8xl: 6rem;
+  --font-sizes-9xl: 8rem;
 }

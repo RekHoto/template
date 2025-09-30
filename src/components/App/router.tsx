@@ -10,7 +10,7 @@ const routes = [
     children: [
       {
         path: "/",
-        element: <MainPage />,
+        element: <PlaygroundPage />,
       },
     ],
   },

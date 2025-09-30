@@ -1,5 +1,5 @@
-@import "colors";
-@import "normalize";
+@use "colors" as *;
+@use "normalize" as *;
 
 .container {
   margin: 0 auto;
